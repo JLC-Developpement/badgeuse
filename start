@@ -1,0 +1,2 @@
+#!/bin/sh
+./_rel/badgeuse/bin/badgeuse console

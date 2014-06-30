@@ -1,0 +1,13 @@
+{application, badgeuse, [
+    {description, "Web interface+server to control workers entry/leave time"},
+    {vsn, "0.1.0"},
+    {modules, ['badgeuse_app', 'badgeuse_handler', 'badgeuse_sup']},
+    {registered, [badgeuse_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {badgeuse_app, []}},
+    {env, []}
+]}.
